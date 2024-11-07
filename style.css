@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.header {
+    background-color: aqua;
+    text-align: left;
+    padding: 15px;
+    color: aqua;
+}
+
+.contact-info { 
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.hover-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: black; /* Màu chữ mặc định */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* Thay đổi màu khi hover */
+.hover-text:hover {
+    color: red; /* Màu chữ khi di chuột vào */
+}
+nav {
+   background-color:aqua;
+   padding: 10p;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    position: relative;
+    color: black;
+    cursor: pointer;
+}
+nav ul li:hover .gioithieu {
+    display: block;
+}
+nav ul li:hover .sanpham {
+    display: block;
+}    
+.sanpham{
+    display: none;
+    position: absolute;
+    background-color:cornflowerblue;
+    min-width: 200px;
+    padding: 5px;
+    top: 100%;
+    left: 0;
+}  
+.sanpham li {
+    color: #000;
+    padding: 5px 10px;
+}  
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.new-price {
+    color: blue;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
